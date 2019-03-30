@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flickr API</title>
+    <link rel="shortcut icon" href="">
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheeet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <h1>What's on your mind?</h1>
+            <div class="input-container right-addon">
+                <input type="text" id="myInput">  
+            </div>
+            <div class="buttons">
+                <button id="flexbox">Flexbox</button>
+                <button id="float">Float</button>
+            </div> 
+    </header>
+    <main class="container">
+        <!--Dialog-->
+        <div id="dialog"></div>
+        <!--Loading animation-->
+        <div class="load">
+            <img src="img/loading.svg"  alt="Loading icon">
+        </div>
+        <!--Main image wrapper-->
+        <div id="column-wrapper" class="column-wrapper column-wrapper-flex">
+        </div>
+    </main>
+</body>
+</html>
