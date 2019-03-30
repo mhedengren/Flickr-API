@@ -46,9 +46,10 @@ $(document).ready(function() {
         $(".load").show();
         //Show flex/float buttons
         $(".buttons").show();
+        //Get the JSON data
         $.getJSON("https://www.flickr.com/services/feeds/photos_public.gne?tags='"+searchvalue+"'&format=json&jsoncallback=?", function(data) { 
         $(".load").hide();
-        //List is same things as data.items which contains the info needed.
+        //Declare that list is same as data.items which contains the object.
         list = data.items;
             //Loop through items and display on screen.
             $.each(data.items, function(index, item){ 
